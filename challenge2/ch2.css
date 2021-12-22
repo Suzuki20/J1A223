@@ -4,9 +4,7 @@
 全体の初期設定
 ----------------------------*/
 * {
-  box-sizing: border-box;
-  font-family: HGS明朝E;
-  margin: 0;
+  font-family: 'Hina Mincho', serif;
 }
 body {
   margin: 0;
