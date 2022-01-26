@@ -1,5 +1,5 @@
 @charset "UTF-8";
-*{
+* {
     box-sizing: border-box;
 }
 caption{
@@ -14,7 +14,7 @@ table{
     margin-bottom: 20px;
 
 }
-th,td{
+th, td{
     border: 1px solid #aaa;
     padding: 10px 20px;
 }
@@ -34,7 +34,7 @@ td {
 .second tr:nth-of-type(even){
     background: #ddd;
 }
-.sedont th{
+.second th{
     width: 35%;
     font-weight: bold;
     text-align: center;
