@@ -54,7 +54,7 @@ address {
 -------------------------------------------------- */
 /* ヘッダー */
 .header {
-  
+  position: relative;
   /* メニューボタンの絶対配置の基準となる */
   padding: 15px 0 0;
   background-color: #fff;
@@ -73,10 +73,12 @@ address {
   「display: none;」で非表示にしている。
   -------------------- */
 .nav-toggle {
+  display: none;
   
 }
 /* ハンバーガーボタン */
 .btn-burger {
+  position: absolute;
   
   /* 親要素（.header）を基準に絶対配置 */
   top: 5px;
@@ -94,14 +96,14 @@ address {
 }
 /* メニューが開いたときの、ハンバーガーボタンの画像を指定 */
 .nav-toggle:checked~.btn-burger {
-  
-}
+  background: url("../img/close.svg")center center /26px 26px no-repeat}
 /* ナビゲーション */
 .nav {
   padding-top: 10px;
   background: url("../img/nav_bg.png") center center / cover no-repeat;
 }
 .nav-list {
+  display: none;
   
   /* 最初はメニュー（ul要素）を非表示にしておく指定 */
   margin: 0;
@@ -118,6 +120,7 @@ address {
 }
 /* メニューが開いたとき、<ul>を表示する */
 .nav-toggle:checked~.nav .nav-list {
+  display: block;
   
 }
 /* ----------ナビゲーションのスタイル指定 ここまで---------- */
@@ -215,28 +218,47 @@ address {
 /* 入場料（テーブル） */
 /* テーブル全体への指定 */
 .price-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;,
+}
   
   
   /* テーブルの境界線が重ねて表示する */
-  
-}
-/* <thead>に対する指定 */
 
+/* <thead>に対する指定 */
+.price-table thead{
+  color: #fff;
+  background-color: #4184e2;
+
+} 
   
   
 
 /* <th>と<td>に対する指定 */
+.price-table th,
+.price-table td{
+  padding: 20px 15px;
+  font-weight: 500;
+  border: 1px solid #707070;
+}
 
   
   
   
 
 /* <tbody>内の<th>に対する指定 */
-
+.price-table tbody th{
+  text-align: left;
+  background-color: #fff;
+}
   
   
 
 /* <tbody>内の<td>に対する指定 */
+.price-table tbody td{
+  background-color: #fff;
+}
 
   
 
